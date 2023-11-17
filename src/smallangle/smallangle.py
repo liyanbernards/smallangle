@@ -3,6 +3,7 @@ import numpy as np
 from numpy import pi
 import pandas as pd
 
+# command group for sin & tan functions
 @click.group()
 def cmd_group():
     pass
