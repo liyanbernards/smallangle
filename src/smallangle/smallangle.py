@@ -10,6 +10,12 @@ def cmd_group():
 @cmd_group.command()
 @click.argument("number", type=int)
 def sin(number):
+    """calculate sin values in range 0-2pi.
+
+    Args:
+        number (int): number of x values in range
+    """
+
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
     print(df)
@@ -18,6 +24,11 @@ def sin(number):
 @cmd_group.command()
 @click.argument("number", type=int)
 def tan(number):
+    """calculate tan values in range 0-2pi.
+
+    Args:
+        number (int): number of x values in range
+    """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "tan (x)": np.tan(x)})
     print(df)
