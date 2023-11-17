@@ -3,7 +3,7 @@ import numpy as np
 from numpy import pi
 import pandas as pd
 
-click.group()
+@click.group()
 def cmd_group():
     pass
 
